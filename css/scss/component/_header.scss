@@ -4,6 +4,11 @@
     font-weight: 800;
 }
 
+.navbar-light .navbar-brand {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: var(--black);
 }
