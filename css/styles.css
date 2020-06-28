@@ -1,0 +1,57 @@
+:root {
+  --primary: #974489;
+  --secondary: #14429F;
+  --tertiary: #4C2E83;
+  --btn: #00B9CF;
+  --white: #FFFFFF;
+  --black: #000000;
+  --primary-font: forma-djr-display, sans-serif;
+  --vertical-padding: 7.5rem;
+  --horizontal-padding: 6rem;
+  --general-spacing: 5.556rem;
+}
+
+.navbar * {
+  font-weight: 800;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--black);
+}
+
+.main {
+  max-width: 80rem;
+  margin: auto;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 1.041665vw;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+body {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
