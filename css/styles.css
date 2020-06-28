@@ -35,7 +35,7 @@
 
 @media (min-width: 576px) {
   .navbar .pb-5, .py-5 {
-    padding: 4rem 2rem !important;
+    padding: 4rem 0rem !important;
   }
 }
 
@@ -46,6 +46,10 @@
     border: 2px solid var(--black);
     color: var(--black);
   }
+}
+
+.mainstage .img-fluid {
+  width: 100%;
 }
 
 .main {
@@ -119,6 +123,7 @@ ul {
 h1 {
   font-weight: 700;
   font-size: 2.6rem;
+  margin: 0;
 }
 
 /*
