@@ -11,6 +11,10 @@
   --general-spacing: 5.556rem;
 }
 
+.navbar {
+  position: relative;
+}
+
 .navbar * {
   font-weight: 700;
 }
@@ -58,8 +62,9 @@
 }
 
 .container {
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 0;
+  padding-right: 0;
+  width: 50%;
 }
 
 /*
@@ -114,10 +119,50 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/assets/navbar-accent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 34rem;
+  width: 100%;
+  z-index: -1;
+  -webkit-animation: animatedBackground 5s linear infinite alternate;
+          animation: animatedBackground 5s linear infinite alternate;
+}
+
+@-webkit-keyframes animatedBackground {
+  to {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animatedBackground {
+  to {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
 }
 
 li {
   list-style-type: none;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -134,6 +179,7 @@ h1 {
 h4 {
   font-weight: 700;
   font-size: 1.8rem;
+  margin: 0;
 }
 
 /*
