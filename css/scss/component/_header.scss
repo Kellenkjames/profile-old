@@ -1,15 +1,30 @@
 // HEADER
 
 .navbar *  {
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.navbar .pb-5, .py-5 {
+    padding: 4rem 1rem !important;
 }
 
 .navbar-light .navbar-brand {
     margin: 0;
     font-size: 1.4rem;
+    color: var(--black);
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: var(--black);
+    font-size: 1.1rem;
+}
+
+// RESPONSIVE 
+
+@media (min-width: 576px) {
+
+    .navbar .pb-5, .py-5 {
+        padding: 4rem 2rem !important;
+    }
 }
 
