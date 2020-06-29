@@ -104,7 +104,9 @@
 
 .main {
   max-width: 32rem;
-  margin: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -184,8 +186,6 @@ body::before {
   height: 33rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 1s linear infinite alternate;
-          animation: animatedBackground 1s linear infinite alternate;
 }
 
 @-webkit-keyframes animatedBackground {
