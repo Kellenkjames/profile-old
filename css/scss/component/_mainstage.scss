@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.mainstage h1 {
+    animation: fadeIn 2s ease-in 0s;
+}
+
 @keyframes fromLeft {
     
     0% {

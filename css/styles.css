@@ -13,6 +13,8 @@
 
 .navbar {
   position: relative;
+  -webkit-animation: fadeIn 1s ease-in 0s;
+          animation: fadeIn 1s ease-in 0s;
 }
 
 .navbar * {
@@ -37,6 +39,24 @@
   transition: border .01s ease-in 0s, color .01s ease-in 0s;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 576px) {
   .navbar .pb-5, .py-5 {
     padding: 4rem 0rem !important;
@@ -57,6 +77,11 @@
   -webkit-animation: fromLeft .8s ease-in 0s;
           animation: fromLeft .8s ease-in 0s;
   position: relative;
+}
+
+.mainstage h1 {
+  -webkit-animation: fadeIn 2s ease-in 0s;
+          animation: fadeIn 2s ease-in 0s;
 }
 
 @-webkit-keyframes fromLeft {
