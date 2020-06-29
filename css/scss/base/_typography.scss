@@ -31,7 +31,7 @@ body::before {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 34rem;
+    height: 33rem;
     width: 100%;
     z-index: -1;
     animation: animatedBackground 1s linear infinite alternate;
@@ -79,7 +79,15 @@ Bootstrap 4 Breakpoints
 
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {  
-    html {font-size: 1.3rem;}
+    
+    html {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
   }
 
   

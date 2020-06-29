@@ -113,6 +113,10 @@
   width: 50%;
 }
 
+.content {
+  margin-bottom: 10rem;
+}
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 Breakpoints
@@ -127,14 +131,14 @@ Bootstrap 4 Breakpoints
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .main {
-    max-width: 45rem;
+    max-width: 42rem;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .main {
-    max-width: 55rem;
+    max-width: 50rem;
   }
 }
 
@@ -177,7 +181,7 @@ body::before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  height: 34rem;
+  height: 33rem;
   width: 100%;
   z-index: -1;
   -webkit-animation: animatedBackground 1s linear infinite alternate;
@@ -236,6 +240,9 @@ Bootstrap 4 Breakpoints
 @media (min-width: 576px) {
   html {
     font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 2.3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
