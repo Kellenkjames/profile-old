@@ -54,6 +54,27 @@
 
 .mainstage .img-fluid {
   width: 100%;
+  -webkit-animation: fromLeft .8s ease-in 0s;
+          animation: fromLeft .8s ease-in 0s;
+  position: relative;
+}
+
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .main {
@@ -134,8 +155,8 @@ body::before {
   height: 34rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 3s linear infinite alternate;
-          animation: animatedBackground 3s linear infinite alternate;
+  -webkit-animation: animatedBackground 1s linear infinite alternate;
+          animation: animatedBackground 1s linear infinite alternate;
 }
 
 @-webkit-keyframes animatedBackground {

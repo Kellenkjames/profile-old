@@ -2,4 +2,16 @@
 
 .mainstage .img-fluid {
     width: 100%;
+    animation: fromLeft .8s ease-in 0s;
+    position: relative;
+}
+
+@keyframes fromLeft {
+    
+    0% {
+       left: -100%;
+    }
+    100% {
+        left: 0;
+    }
 }

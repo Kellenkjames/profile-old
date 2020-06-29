@@ -34,7 +34,7 @@ body::before {
     height: 34rem;
     width: 100%;
     z-index: -1;
-    animation: animatedBackground 3s linear infinite alternate;
+    animation: animatedBackground 1s linear infinite alternate;
 }
 
 @keyframes animatedBackground {
