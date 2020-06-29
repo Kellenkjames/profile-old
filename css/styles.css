@@ -134,8 +134,8 @@ body::before {
   height: 34rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 5s linear infinite alternate;
-          animation: animatedBackground 5s linear infinite alternate;
+  -webkit-animation: animatedBackground 3s linear infinite alternate;
+          animation: animatedBackground 3s linear infinite alternate;
 }
 
 @-webkit-keyframes animatedBackground {
