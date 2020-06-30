@@ -40,15 +40,15 @@
                 </ul>
             </div>
         </nav>
-        <div id="Mainstage" class="mainstage mx-auto">
+        <section id="Mainstage" class="mainstage mx-auto">
             <header class="text-center mb-5">
                 <h1>Hello, my name is Kellen. <br>I'm a Front-End Developer.</h1>
             </header>
             ​<picture>
                 <img class="mb-5 img-fluid" src="/assets/mainstage.jpg" class="img-fluid" alt="Kellen James">
             </picture>
-        </div>
-        <div class="content container lax" data-lax-preset="lazy blurIn">
+        </section>
+        <section id="AboutMe" class="content container lax" data-lax-preset="lazy blurIn">
             <header class="mb-3">
                 <h4>My name is Kellen and I'm a Front-End <br>Developer for a digital marketing agency in Los<br> Angeles, CA.</h4>
             </header>
@@ -56,20 +56,38 @@
             <p>Learning to code is about two things: producing my own work, and turning raw ideas into elegant, innovative tools that human beings actually _enjoy_ using. 
             Armed with UX expertise and a user-focused philosophy, I consider every project an opportunity to learn, grow, and add something valuable to the world.
             </p>
-        </div>
-        <div class="container lax" data-lax-preset="lazy blurIn">
+        </section>
+        <section id="Skills" class="skills lax" data-lax-preset="lazy driftRight">
             <header class="text-center">
-                <h4 class="mb-3">Skills</h4>
-                <ul class="d-flex flex-wrap">
-                    <li>
-                        <div class="d-flex flex-column">
-                            <svg></svg>
-                            <strong>HTML</strong>
-                        </div>
+                <h4 class="mb-5">Skills</h4>
+                <ul class="d-flex justify-content-between flex-wrap">
+                    <li class="d-flex flex-column align-items-center mb-5">
+                        <img src="/assets/icons/html-icon.png" alt="HTML Icon" />
+                        <strong>HTML</strong>
+                    </li>
+                    <li class="d-flex flex-column align-items-center mb-5">
+                        <img src="/assets/icons/css-icon.png" alt="CSS Icon" />
+                        <strong>CSS</strong>
+                    </li>
+                    <li class="d-flex flex-column align-items-center mb-5">
+                        <img src="/assets/icons/sass-icon.png" alt="SASS Icon" />
+                        <strong>SASS</strong>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <img src="/assets/icons/js-icon.png" alt="JavaScript Icon" />
+                        <strong>JavaScript</strong>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <img src="/assets/icons/responsive-design-icon.png" alt="Responsive Design Icon" />
+                        <strong>Responsive Design / UX</strong>
+                    </li>
+                    <li class="d-flex flex-column align-items-center">
+                        <img src="/assets/icons/web-performance-icon.png" alt="Web Performance Icon" />
+                        <strong>Web Optimization</strong>
                     </li>
                 </ul>
             </header>
-        </div>
+        </section>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

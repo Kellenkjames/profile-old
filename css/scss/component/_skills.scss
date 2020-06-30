@@ -1,0 +1,47 @@
+.skills {
+    padding-bottom: 10rem;
+}
+
+.skills li {
+    width: 100%;
+    border: 1px solid var(--border);
+    padding: 3rem;
+}
+
+.skills li > img {
+    display: block;
+    width: 4.5rem;
+    height: auto;
+}
+
+.skills li > strong {
+    font-size: 1.3rem;
+}
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {  
+    .skills li {
+        width: 31%;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    
+  }
