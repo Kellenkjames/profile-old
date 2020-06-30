@@ -116,7 +116,7 @@
 }
 
 .content {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 /*
@@ -178,32 +178,14 @@ body::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0%;
   background-image: url("/assets/navbar-accent.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   height: 33rem;
   width: 100%;
   z-index: -1;
-}
-
-@-webkit-keyframes animatedBackground {
-  to {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
-
-@keyframes animatedBackground {
-  to {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
 }
 
 li {
