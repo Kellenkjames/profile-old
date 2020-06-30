@@ -118,8 +118,8 @@
   height: 23rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 1.1s linear infinite alternate;
-          animation: animatedBackground 1.1s linear infinite alternate;
+  -webkit-animation: animatedBackground 1.3s linear infinite alternate;
+          animation: animatedBackground 1.3s linear infinite alternate;
 }
 
 .recent-work li {
@@ -244,8 +244,8 @@ body::before {
   height: 33rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 1.1s linear infinite alternate;
-          animation: animatedBackground 1.1s linear infinite alternate;
+  -webkit-animation: animatedBackground 1.3s linear infinite alternate;
+          animation: animatedBackground 1.3s linear infinite alternate;
 }
 
 @-webkit-keyframes animatedBackground {
