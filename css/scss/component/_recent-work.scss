@@ -1,0 +1,26 @@
+// RECENT WORK
+
+.recent-work {
+    background-color: var(--black);
+    padding-top: 10rem;
+    position: relative;
+}
+
+.recent-work::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/work-accent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 23rem;
+    width: 100%;
+    z-index: -1;
+    animation: animatedBackground 1.1s linear infinite alternate;
+}
+
+.recent-work li {
+    width: 25%;
+}

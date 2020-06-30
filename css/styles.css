@@ -7,9 +7,6 @@
   --black: #000000;
   --border: #D3D3D3;
   --primary-font: forma-djr-display, sans-serif;
-  --vertical-padding: 7.5rem;
-  --horizontal-padding: 6rem;
-  --general-spacing: 5.556rem;
 }
 
 .navbar {
@@ -101,6 +98,32 @@
   100% {
     left: 0;
   }
+}
+
+.recent-work {
+  background-color: var(--black);
+  padding-top: 10rem;
+  position: relative;
+}
+
+.recent-work::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/assets/work-accent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 23rem;
+  width: 100%;
+  z-index: -1;
+  -webkit-animation: animatedBackground 1.1s linear infinite alternate;
+          animation: animatedBackground 1.1s linear infinite alternate;
+}
+
+.recent-work li {
+  width: 25%;
 }
 
 .skills {
