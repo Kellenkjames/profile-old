@@ -1,5 +1,5 @@
 :root {
-  --primary: #974489;
+  --primary: #663399;
   --secondary: #14429F;
   --tertiary: #4C2E83;
   --btn: #00B9CF;
@@ -9,14 +9,38 @@
   --primary-font: forma-djr-display, sans-serif;
 }
 
-.cta {
-  background-color: var(--white);
-  padding-top: 3rem;
+.cta.main {
+  margin-top: 5rem;
+  background-color: var(--black);
 }
 
-.cta .main {
-  padding: 2rem;
-  background-color: var(--black);
+.cta.main > div {
+  padding: 3rem;
+}
+
+.cta p {
+  font-size: 2rem;
+  margin: 0 10rem;
+}
+
+.cta p > span {
+  display: block;
+  margin-left: 20rem;
+}
+
+.footer {
+  padding: 10rem;
+  background-color: var(--primary);
+}
+
+.footer * {
+  color: var(--white);
+  text-align: center;
+}
+
+.footer strong {
+  display: block;
+  font-size: 1.3rem;
 }
 
 .navbar {
@@ -135,7 +159,7 @@
   position: absolute;
   bottom: 0;
   background: var(--white);
-  height: 25rem;
+  height: 5rem;
   width: 100%;
   z-index: -1;
 }
@@ -304,24 +328,6 @@ body::before {
   z-index: -1;
 }
 
-@-webkit-keyframes animatedBackground {
-  to {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
-
-@keyframes animatedBackground {
-  to {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
-
 li {
   list-style-type: none;
 }
@@ -346,6 +352,22 @@ h4 {
   font-weight: 700;
   font-size: 1.8rem;
   margin: 0;
+}
+
+a.btn {
+  background-color: var(--btn);
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 10rem;
+  padding: .5rem;
 }
 
 /*

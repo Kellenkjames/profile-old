@@ -34,16 +34,6 @@ body::before {
     height: 37.2rem;
     width: 100%;
     z-index: -1;
-    // animation: animatedBackground 1.3s linear infinite alternate;
-}
-
-@keyframes animatedBackground {
-    to {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 100% 0;
-    }
 }
 
 li {
@@ -70,6 +60,16 @@ h4 {
     font-weight: 700;
     font-size: 1.8rem;
     margin: 0;
+}
+
+a.btn {
+    background-color: var(--btn);
+    font-size: 1rem;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    min-width: 10rem;
+    padding: .5rem;
 }
 
 /*

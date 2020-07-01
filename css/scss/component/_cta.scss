@@ -1,11 +1,20 @@
 // CTA 
 
-.cta {
-    background-color: var(--white);
-    padding-top: 3rem;
+.cta.main {
+    margin-top: 5rem;
+    background-color: var(--black);
 }
 
-.cta .main {
-    padding: 2rem;
-    background-color: var(--black);
+.cta.main > div {
+    padding: 3rem;
+}
+
+.cta p {
+    font-size: 2rem;
+    margin: 0 10rem;
+}
+
+.cta p > span {
+    display: block;
+    margin-left: 20rem;
 }

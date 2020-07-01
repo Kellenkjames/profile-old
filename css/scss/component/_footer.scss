@@ -1,0 +1,16 @@
+// FOOTER
+
+.footer {
+    padding: 10rem;
+    background-color: var(--primary);
+}
+
+.footer * {
+    color: var(--white);
+    text-align: center;
+}
+
+.footer strong {
+    display: block;
+    font-size: 1.3rem;
+}
