@@ -14,3 +14,22 @@
     display: block;
     font-size: 1.3rem;
 }
+
+.footer .social li {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    padding: 1rem;
+    max-height: 3rem;
+    display: flex;
+    align-items: center;
+    transition: border .3s ease;
+}
+
+.footer .social li:hover {
+    border: 1px solid var(--btn);
+}
+
+.footer .social li:not(:last-child) {
+    margin-right: 1rem;
+}
+

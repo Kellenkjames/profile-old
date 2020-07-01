@@ -43,6 +43,29 @@
   font-size: 1.3rem;
 }
 
+.footer .social li {
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  padding: 1rem;
+  max-height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: border .3s ease;
+  transition: border .3s ease;
+}
+
+.footer .social li:hover {
+  border: 1px solid var(--btn);
+}
+
+.footer .social li:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .navbar {
   position: relative;
   -webkit-animation: fadeIn 1s ease-in 0s;
