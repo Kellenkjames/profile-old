@@ -3,7 +3,6 @@
 .recent-work {
     background-color: var(--black);
     padding-top: 10rem;
-    padding-bottom: 10rem;
     position: relative;
 }
 
@@ -19,11 +18,20 @@
     height: 40rem;
     width: 100%;
     z-index: -1;
-    // animation: animatedBackground 1.3s linear infinite alternate;
+}
+
+.recent-work::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: var(--white);
+    height: 25rem;
+    width: 100%;
+    z-index: -1;
 }
 
 .recent-work li {
-    width: 23.5%;
+    width: 24%;
     position: relative;
     margin-bottom: 2rem;
 }

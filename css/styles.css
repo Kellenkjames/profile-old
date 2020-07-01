@@ -9,6 +9,16 @@
   --primary-font: forma-djr-display, sans-serif;
 }
 
+.cta {
+  background-color: var(--white);
+  padding-top: 3rem;
+}
+
+.cta .main {
+  padding: 2rem;
+  background-color: var(--black);
+}
+
 .navbar {
   position: relative;
   -webkit-animation: fadeIn 1s ease-in 0s;
@@ -103,7 +113,6 @@
 .recent-work {
   background-color: var(--black);
   padding-top: 10rem;
-  padding-bottom: 10rem;
   position: relative;
 }
 
@@ -121,8 +130,18 @@
   z-index: -1;
 }
 
+.recent-work::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: var(--white);
+  height: 25rem;
+  width: 100%;
+  z-index: -1;
+}
+
 .recent-work li {
-  width: 23.5%;
+  width: 24%;
   position: relative;
   margin-bottom: 2rem;
 }
