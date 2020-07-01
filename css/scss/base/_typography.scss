@@ -31,10 +31,10 @@ body::before {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
-    height: 33rem;
+    height: 37.2rem;
     width: 100%;
     z-index: -1;
-    animation: animatedBackground 1.3s linear infinite alternate;
+    // animation: animatedBackground 1.3s linear infinite alternate;
 }
 
 @keyframes animatedBackground {

@@ -103,6 +103,7 @@
 .recent-work {
   background-color: var(--black);
   padding-top: 10rem;
+  padding-bottom: 10rem;
   position: relative;
 }
 
@@ -115,15 +116,17 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 23rem;
+  height: 40rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 1.3s linear infinite alternate;
-          animation: animatedBackground 1.3s linear infinite alternate;
 }
 
 .recent-work li {
   width: 25%;
+}
+
+.recent-work li img {
+  width: 18rem;
 }
 
 .skills {
@@ -241,11 +244,9 @@ body::before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
-  height: 33rem;
+  height: 37.2rem;
   width: 100%;
   z-index: -1;
-  -webkit-animation: animatedBackground 1.3s linear infinite alternate;
-          animation: animatedBackground 1.3s linear infinite alternate;
 }
 
 @-webkit-keyframes animatedBackground {
