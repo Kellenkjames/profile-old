@@ -22,7 +22,8 @@
     max-height: 3rem;
     display: flex;
     align-items: center;
-    transition: border .3s ease;
+    transition: border .2s ease;
+    cursor: pointer;
 }
 
 .footer .social li:hover {
