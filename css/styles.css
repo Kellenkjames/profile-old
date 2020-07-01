@@ -130,8 +130,8 @@
 
 .mainstage .img-fluid {
   width: 100%;
-  -webkit-animation: fromLeft .8s ease-in 0s;
-          animation: fromLeft .8s ease-in 0s;
+  -webkit-animation: fromLeft .5s ease-in 0s;
+          animation: fromLeft .5s ease-in 0s;
   position: relative;
 }
 
