@@ -26,10 +26,17 @@ Bootstrap 4 Breakpoints
 
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {  
-    .skills li {
-        width: 31%;
+
+    .skills {
+        padding-bottom: 4rem;
     }
-  }
+    
+    .skills li {
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+  
+}
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {  

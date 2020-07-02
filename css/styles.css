@@ -128,6 +128,20 @@
   }
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar .pb-5, .py-5 {
+    padding: 2rem 0rem !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .mainstage .img-fluid {
   width: 100%;
   -webkit-animation: fromLeft .5s ease-in 0s;
@@ -158,6 +172,23 @@
   }
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .mainstage .mb-5, .my-5 {
+    margin-bottom: 2rem !important;
+  }
+  .mainstage .img-fluid {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .recent-work {
   background-color: var(--black);
   padding-top: 10rem;
@@ -189,7 +220,6 @@
 }
 
 .recent-work li {
-  width: 24%;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -232,6 +262,23 @@
   background-color: var(--primary);
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .recent-work {
+    padding-top: 6rem;
+  }
+  .recent-work::before {
+    height: 27rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .skills {
   padding-bottom: 10rem;
 }
@@ -258,8 +305,12 @@ Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .skills {
+    padding-bottom: 4rem;
+  }
   .skills li {
-    width: 31%;
+    width: 48%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -290,7 +341,16 @@ Bootstrap 4 Breakpoints
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .main {
-    max-width: 33rem;
+    max-width: 26rem;
+  }
+  .container {
+    width: 90%;
+  }
+  .container h4 {
+    font-size: 1.4rem;
+  }
+  .content {
+    margin-bottom: 5rem;
   }
 }
 
@@ -311,7 +371,10 @@ Bootstrap 4 Breakpoints
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .main {
-    max-width: 83rem;
+    max-width: 52rem;
+  }
+  .content {
+    width: 70%;
   }
 }
 
@@ -405,6 +468,10 @@ Bootstrap 4 Breakpoints
   }
   h1 {
     font-size: 2.3rem;
+  }
+  body::before {
+    background-size: cover;
+    height: 23.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

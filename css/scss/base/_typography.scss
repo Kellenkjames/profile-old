@@ -88,6 +88,11 @@ Bootstrap 4 Breakpoints
         font-size: 2.3rem;
     }
 
+    body::before {
+        background-size: cover;
+        height: 23.2rem;
+    }
+
   }
 
   

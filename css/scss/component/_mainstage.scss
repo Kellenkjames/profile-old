@@ -19,3 +19,38 @@
         left: 0;
     }
 }
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {  
+    
+    .mainstage .mb-5, .my-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .mainstage .img-fluid {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+
+
+}
