@@ -1,7 +1,7 @@
 // SPACINGS
 
 .main {
-    max-width: 32rem;
+    max-width: 16rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -10,11 +10,11 @@
 .container {
     padding-left: 0;
     padding-right: 0;
-    width: 50%;
+    width: 95%;
 }
 
 .content {
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 }
 
 /*
@@ -38,7 +38,7 @@ Bootstrap 4 Breakpoints
     }
 
     .content {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
   }
 

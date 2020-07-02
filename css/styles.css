@@ -1,7 +1,7 @@
 :root {
   --primary: #663399;
   --secondary: #14429F;
-  --tertiary: #4C2E83;
+  --tertiary: #7016E5;
   --btn: #00B9CF;
   --white: #FFFFFF;
   --black: #000000;
@@ -14,23 +14,37 @@
   background-color: var(--black);
 }
 
+.cta.main {
+  margin-top: 3rem;
+}
+
 .cta.main > div {
-  padding: 3rem;
+  display: block !important;
+  padding: 2rem;
+  text-align: center;
 }
 
 .cta p {
-  font-size: 2rem;
-  margin: 0 10rem;
+  font-size: 1.4rem;
 }
 
-.cta p > span {
-  display: block;
-  margin-left: 20rem;
+.cta a.btn {
+  width: 60%;
+  margin: auto;
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .footer {
-  padding: 10rem;
-  background-color: var(--primary);
+  padding: 6rem 0 3rem;
+  margin-top: -4rem;
+  background-color: var(--tertiary);
 }
 
 .footer * {
@@ -67,6 +81,14 @@
   margin-right: 1rem;
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .navbar {
   position: relative;
   -webkit-animation: fadeIn 1s ease-in 0s;
@@ -78,7 +100,7 @@
 }
 
 .navbar .pb-5, .py-5 {
-  padding: 4rem 1rem !important;
+  padding: 2rem 1rem !important;
 }
 
 .navbar-light .navbar-brand {
@@ -133,12 +155,6 @@
 Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .navbar .pb-5, .py-5 {
-    padding: 2rem 0rem !important;
-  }
-}
-
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
@@ -149,7 +165,12 @@ Bootstrap 4 Breakpoints
   position: relative;
 }
 
+.mainstage .mb-5, .my-5 {
+  margin-bottom: 2rem !important;
+}
+
 .mainstage h1 {
+  font-size: 1.3rem;
   -webkit-animation: fadeIn 2s ease-in 0s;
           animation: fadeIn 2s ease-in 0s;
 }
@@ -177,21 +198,12 @@ Bootstrap 4 Breakpoints
 Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .mainstage .mb-5, .my-5 {
-    margin-bottom: 2rem !important;
-  }
-  .mainstage .img-fluid {
-    margin-bottom: 0 !important;
-  }
-}
-
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .recent-work {
   background-color: var(--black);
-  padding-top: 10rem;
+  padding-top: 2rem;
   position: relative;
 }
 
@@ -221,6 +233,9 @@ Bootstrap 4 Breakpoints
 
 .recent-work li {
   position: relative;
+}
+
+.recent-work li:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -274,19 +289,31 @@ Bootstrap 4 Breakpoints
   .recent-work::before {
     height: 27rem;
   }
+  .recent-work .main {
+    max-width: 21rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .skills {
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
 }
 
 .skills li {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   border: 1px solid var(--border);
-  padding: 3rem;
+  padding: .5rem;
+}
+
+.skills li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.skills .mb-5 {
+  margin-bottom: 1rem !important;
 }
 
 .skills li > img {
@@ -306,7 +333,7 @@ Bootstrap 4 Breakpoints
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .skills {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   .skills li {
     width: 48%;
@@ -318,7 +345,7 @@ Bootstrap 4 Breakpoints
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .main {
-  max-width: 32rem;
+  max-width: 16rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -327,11 +354,11 @@ Bootstrap 4 Breakpoints
 .container {
   padding-left: 0;
   padding-right: 0;
-  width: 50%;
+  width: 95%;
 }
 
 .content {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 
 /*
@@ -350,7 +377,7 @@ Bootstrap 4 Breakpoints
     font-size: 1.4rem;
   }
   .content {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -413,6 +440,7 @@ body::before {
   height: 37.2rem;
   width: 100%;
   z-index: -1;
+  display: none;
 }
 
 li {
@@ -437,7 +465,7 @@ h1 {
 
 h4 {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 0;
 }
 

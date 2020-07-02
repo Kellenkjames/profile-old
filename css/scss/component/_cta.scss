@@ -5,16 +5,51 @@
     background-color: var(--black);
 }
 
+.cta.main {
+    margin-top: 3rem;
+}
+
 .cta.main > div {
-    padding: 3rem;
+    display: block !important;
+    padding: 2rem;
+    text-align: center;
 }
 
 .cta p {
-    font-size: 2rem;
-    margin: 0 10rem;
+    font-size: 1.4rem;
 }
 
-.cta p > span {
-    display: block;
-    margin-left: 20rem;
+.cta a.btn {
+    width: 60%;
+    margin: auto;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {  
+
+    
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+
+
 }

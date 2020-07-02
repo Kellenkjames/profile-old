@@ -6,7 +6,12 @@
     position: relative;
 }
 
+.mainstage .mb-5, .my-5 {
+    margin-bottom: 2rem !important;
+}
+
 .mainstage h1 {
+    font-size: 1.3rem;
     animation: fadeIn 2s ease-in 0s;
 }
 
@@ -28,13 +33,9 @@ Bootstrap 4 Breakpoints
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {  
     
-    .mainstage .mb-5, .my-5 {
-        margin-bottom: 2rem !important;
-    }
+    
 
-    .mainstage .img-fluid {
-        margin-bottom: 0 !important;
-    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */

@@ -2,7 +2,7 @@
 
 .recent-work {
     background-color: var(--black);
-    padding-top: 10rem;
+    padding-top: 2rem;
     position: relative;
 }
 
@@ -32,6 +32,9 @@
 
 .recent-work li {
     position: relative;
+}
+
+.recent-work li:not(:last-child) {
     margin-bottom: 2rem;
 }
 
@@ -86,6 +89,10 @@ Bootstrap 4 Breakpoints
 
         .recent-work::before {
             height: 27rem;
+        }
+
+        .recent-work .main {
+            max-width: 21rem;
         }
   }
 

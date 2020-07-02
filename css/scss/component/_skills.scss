@@ -1,11 +1,20 @@
 .skills {
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 }
 
 .skills li {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     border: 1px solid var(--border);
-    padding: 3rem;
+    padding: .5rem;
+}
+
+.skills li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.skills .mb-5 {
+    margin-bottom: 1rem !important;
 }
 
 .skills li > img {
@@ -28,7 +37,7 @@ Bootstrap 4 Breakpoints
   @media (min-width: 576px) {  
 
     .skills {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
     
     .skills li {

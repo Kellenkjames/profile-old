@@ -10,7 +10,7 @@
 }
 
 .navbar .pb-5, .py-5 {
-    padding: 4rem 1rem !important;
+    padding: 2rem 1rem !important;
 }
 
 .navbar-light .navbar-brand {
@@ -28,15 +28,15 @@
 
 // KEYFRAMES
 @keyframes fadeIn {
-
+    
     0% {
         opacity: 0;
     }
-
+    
     100% {
         opacity: 1;
     }
-
+    
 }
 
 // RESPONSIVE 
@@ -57,7 +57,7 @@
         border: 2px solid var(--black);
         color: var(--black);
     }
-        
+    
 }
 
 /*
@@ -65,31 +65,29 @@
 Bootstrap 4 Breakpoints
 */
 
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
     
-        .navbar .pb-5, .py-5 {
-            padding: 2rem 0rem !important;
-        }
+    
     
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  
-
+    
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
-
+    
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-
-
-
+    
+    
+    
 }
 
 
