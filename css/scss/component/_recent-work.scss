@@ -45,14 +45,14 @@
     transform: translate(-50%,-50%);
     background-color: transparent;
     height: 100%;
-    width: 100%;
+    width: 102%;
     opacity: 0;
     transition: .4s ease;
 }
 
 .recent-work li .desc-con > div {
     position: relative;
-    top: calc(100% - 10rem);
+    top: calc(100% - 8.5rem);
 }
 
 .recent-work li .desc-con p {

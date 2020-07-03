@@ -135,12 +135,13 @@ Bootstrap 4 Breakpoints
   }
 }
 
-@media (min-width: 576px) {
-  .navbar .pb-5, .py-5 {
-    padding: 4rem 0rem !important;
-  }
-}
-
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 Breakpoints
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link:active,
   .navbar-light .navbar-nav .nav-link:focus,
@@ -150,13 +151,6 @@ Bootstrap 4 Breakpoints
   }
 }
 
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 Breakpoints
-*/
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) */
-/* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .mainstage .img-fluid {
   width: 100%;
@@ -198,6 +192,12 @@ Bootstrap 4 Breakpoints
 Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .mainstage h1 {
+    font-size: 1.3rem;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
@@ -247,7 +247,7 @@ Bootstrap 4 Breakpoints
           transform: translate(-50%, -50%);
   background-color: transparent;
   height: 100%;
-  width: 100%;
+  width: 102%;
   opacity: 0;
   -webkit-transition: .4s ease;
   transition: .4s ease;
@@ -255,7 +255,7 @@ Bootstrap 4 Breakpoints
 
 .recent-work li .desc-con > div {
   position: relative;
-  top: calc(100% - 10rem);
+  top: calc(100% - 8.5rem);
 }
 
 .recent-work li .desc-con p {
@@ -298,7 +298,7 @@ Bootstrap 4 Breakpoints
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .skills {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .skills li {
@@ -323,7 +323,7 @@ Bootstrap 4 Breakpoints
 }
 
 .skills li > strong {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /*
@@ -332,12 +332,15 @@ Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .skills {
-    padding-bottom: 2rem;
-  }
   .skills li {
     width: 48%;
-    margin-bottom: 2rem;
+    margin: 0 auto 1rem;
+  }
+  .skills li > strong {
+    font-size: 1rem;
+  }
+  .skills li:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }
 
@@ -368,10 +371,7 @@ Bootstrap 4 Breakpoints
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .main {
-    max-width: 26rem;
-  }
-  .container {
-    width: 90%;
+    max-width: 25rem;
   }
   .container h4 {
     font-size: 1.4rem;
@@ -499,7 +499,8 @@ Bootstrap 4 Breakpoints
   }
   body::before {
     background-size: cover;
-    height: 23.2rem;
+    height: 19rem;
+    display: block;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 .skills {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .skills li {
@@ -24,7 +24,7 @@
 }
 
 .skills li > strong {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 
@@ -36,14 +36,20 @@ Bootstrap 4 Breakpoints
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {  
 
-    .skills {
-        padding-bottom: 2rem;
-    }
-    
     .skills li {
         width: 48%;
-        margin-bottom: 2rem;
+        margin: 0 auto 1rem;
     }
+
+    .skills li > strong {
+        font-size: 1rem;
+    }
+
+    .skills li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    
   
 }
 

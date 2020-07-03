@@ -91,7 +91,8 @@ Bootstrap 4 Breakpoints
 
     body::before {
         background-size: cover;
-        height: 23.2rem;
+        height: 19rem;
+        display: block;
     }
 
   }
