@@ -1,9 +1,13 @@
 // RECENT WORK
 
 .recent-work {
-    background-color: var(--black);
     padding-top: 2rem;
+    padding-bottom: 1rem;
     position: relative;
+}
+
+.recent-work h4 {
+    letter-spacing: .1rem;
 }
 
 .recent-work::before {
@@ -12,7 +16,7 @@
     top: 0;
     left: 0;
     background-image: url('/assets/work-accent.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 40rem;
@@ -23,15 +27,17 @@
 .recent-work::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    background: var(--white);
-    height: 5rem;
+    top: 0;
+    left: 0;
+    background: var(--black);
+    height: 95%;
     width: 100%;
     z-index: -1;
 }
 
 .recent-work li {
     position: relative;
+    width: 100%;
 }
 
 .recent-work li:not(:last-child) {
@@ -44,7 +50,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: transparent;
-    height: 100%;
+    height: 102%;
     width: 102%;
     opacity: 0;
     transition: .4s ease;
@@ -58,6 +64,7 @@
 .recent-work li .desc-con p {
     padding: 0 1rem;
     text-align: center;
+    margin-bottom: .5rem;
 }
 
 .recent-work li .desc-con a {
@@ -80,36 +87,85 @@
 Bootstrap 4 Breakpoints
 */
 
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {  
-    
-        .recent-work {
-            padding-top: 6rem;
-        }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
 
-        .recent-work::before {
-            height: 27rem;
-        }
-
-        .recent-work .main {
-            max-width: 21rem;
-        }
-  }
-
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {  
+    .recent-work li {
+        width: 48%;
+        margin-bottom: 2rem;
+    }
     
-  }
+    .recent-work::before {
+        height: 27rem;
+    }
 
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
+    .recent-work::after {
+        height: 90%;
+    }
     
-    
-  }
+    .recent-work li .desc-con > div {
+        top: calc(100% - 7.1rem);
+    }
 
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
+    .recent-work li .desc-con p {
+        font-size: 1rem;
+    }
+    
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    .recent-work li {
+        width: 48%;
+    }
+
+    .recent-work li .desc-con > div {
+        top: calc(100% - 9rem);
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .recent-work li {
+        margin-bottom: 2rem;
+    }
+
+    .recent-work li .desc-con > div {
+        top: calc(100% - 10.5rem);
+    }
+
+    .recent-work li .desc-con p {
+        font-size: 1.2rem;
+    }
     
     
-  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+    .recent-work {
+        padding-bottom: 5rem;
+    }
+
+    .recent-work::after {
+        height: 78%;
+    }
+
+    .recent-work li {
+        width: 24%;
+    }
+
+    .recent-work li .desc-con p {
+        font-size: 1.2rem;
+    }
+
+    .recent-work li .desc-con > div {
+        top: calc(100% - 10.5rem);
+    }
+    
+    
+}

@@ -6,13 +6,13 @@
     position: relative;
 }
 
-.mainstage .mb-5, .my-5 {
-    margin-bottom: 2rem !important;
-}
-
 .mainstage h1 {
     font-size: 1.3rem;
     animation: fadeIn 2s ease-in 0s;
+}
+
+.mainstage .img-fluid {
+    margin-bottom: 1rem;
 }
 
 @keyframes fromLeft {
@@ -34,7 +34,7 @@ Bootstrap 4 Breakpoints
 @media (min-width: 576px) {  
     
     .mainstage h1 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
     
     

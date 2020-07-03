@@ -1,9 +1,9 @@
-// TYPOGRAPHY
+// TYPOGRAPHY + GENERAL 
 
 *, 
 *:before, 
 *:after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -28,7 +28,7 @@ body::before {
     top: 0;
     left: 0;
     background-image: url('/assets/navbar-accent.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
     height: 37.2rem;
@@ -44,6 +44,7 @@ li {
 p {
     font-weight: 500;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 ul {
@@ -54,6 +55,7 @@ ul {
 h1 {
     font-weight: 700;
     font-size: 2.6rem;
+    letter-spacing: .1rem;
     margin: 0;
 }
 
@@ -73,30 +75,55 @@ a.btn {
     padding: .5rem;
 }
 
+.img-fluid {
+    width: 100%;
+    display: block;
+}
+
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 Breakpoints
 */
 
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {  
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {  
     
     html {
         font-size: 1.3rem;
     }
-
+    
     h1 {
         font-size: 2.3rem;
     }
-
+    
     body::before {
-        background-size: cover;
-        height: 19rem;
+        height: 20rem;
         display: block;
     }
-
+    
+}
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    
+    
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    
+    body::before {
+        height: 22rem;
+    }
+    
   }
 
-  
-  
- 
+

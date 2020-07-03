@@ -26,6 +26,7 @@
 
 .cta p {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .cta a.btn {
@@ -38,8 +39,20 @@
 Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .cta.main {
+    margin-top: 0;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cta a.btn {
+    width: 30%;
+  }
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 .footer {
   padding: 6rem 0 3rem;
@@ -89,6 +102,12 @@ Bootstrap 4 Breakpoints
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: -1rem;
+  }
+}
+
 .navbar {
   position: relative;
   -webkit-animation: fadeIn 1s ease-in 0s;
@@ -159,14 +178,14 @@ Bootstrap 4 Breakpoints
   position: relative;
 }
 
-.mainstage .mb-5, .my-5 {
-  margin-bottom: 2rem !important;
-}
-
 .mainstage h1 {
   font-size: 1.3rem;
   -webkit-animation: fadeIn 2s ease-in 0s;
           animation: fadeIn 2s ease-in 0s;
+}
+
+.mainstage .img-fluid {
+  margin-bottom: 1rem;
 }
 
 @-webkit-keyframes fromLeft {
@@ -194,7 +213,7 @@ Bootstrap 4 Breakpoints
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .mainstage h1 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -202,9 +221,13 @@ Bootstrap 4 Breakpoints
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .recent-work {
-  background-color: var(--black);
   padding-top: 2rem;
+  padding-bottom: 1rem;
   position: relative;
+}
+
+.recent-work h4 {
+  letter-spacing: .1rem;
 }
 
 .recent-work::before {
@@ -213,7 +236,7 @@ Bootstrap 4 Breakpoints
   top: 0;
   left: 0;
   background-image: url("/assets/work-accent.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 40rem;
@@ -224,15 +247,17 @@ Bootstrap 4 Breakpoints
 .recent-work::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  background: var(--white);
-  height: 5rem;
+  top: 0;
+  left: 0;
+  background: var(--black);
+  height: 95%;
   width: 100%;
   z-index: -1;
 }
 
 .recent-work li {
   position: relative;
+  width: 100%;
 }
 
 .recent-work li:not(:last-child) {
@@ -246,7 +271,7 @@ Bootstrap 4 Breakpoints
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: transparent;
-  height: 100%;
+  height: 102%;
   width: 102%;
   opacity: 0;
   -webkit-transition: .4s ease;
@@ -261,6 +286,7 @@ Bootstrap 4 Breakpoints
 .recent-work li .desc-con p {
   padding: 0 1rem;
   text-align: center;
+  margin-bottom: .5rem;
 }
 
 .recent-work li .desc-con a {
@@ -283,29 +309,79 @@ Bootstrap 4 Breakpoints
 */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .recent-work {
-    padding-top: 6rem;
+  .recent-work li {
+    width: 48%;
+    margin-bottom: 2rem;
   }
   .recent-work::before {
     height: 27rem;
   }
-  .recent-work .main {
-    max-width: 21rem;
+  .recent-work::after {
+    height: 90%;
+  }
+  .recent-work li .desc-con > div {
+    top: calc(100% - 7.1rem);
+  }
+  .recent-work li .desc-con p {
+    font-size: 1rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .recent-work li {
+    width: 48%;
+  }
+  .recent-work li .desc-con > div {
+    top: calc(100% - 9rem);
+  }
+}
+
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .recent-work li {
+    margin-bottom: 2rem;
+  }
+  .recent-work li .desc-con > div {
+    top: calc(100% - 10.5rem);
+  }
+  .recent-work li .desc-con p {
+    font-size: 1.2rem;
+  }
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .recent-work {
+    padding-bottom: 5rem;
+  }
+  .recent-work::after {
+    height: 78%;
+  }
+  .recent-work li {
+    width: 24%;
+  }
+  .recent-work li .desc-con p {
+    font-size: 1.2rem;
+  }
+  .recent-work li .desc-con > div {
+    top: calc(100% - 10.5rem);
+  }
+}
+
 .skills {
   padding-bottom: 2rem;
+}
+
+.skills h4 {
+  letter-spacing: .1rem;
 }
 
 .skills li {
   width: 90%;
   margin: auto;
   border: 1px solid var(--border);
-  padding: .5rem;
+  padding: 2rem;
 }
 
 .skills li:not(:last-child) {
@@ -323,7 +399,7 @@ Bootstrap 4 Breakpoints
 }
 
 .skills li > strong {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /*
@@ -337,7 +413,7 @@ Bootstrap 4 Breakpoints
     margin: 0 auto 1rem;
   }
   .skills li > strong {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .skills li:not(:last-child) {
     margin-bottom: 1rem;
@@ -345,8 +421,32 @@ Bootstrap 4 Breakpoints
 }
 
 /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .skills li > strong {
+    font-size: 1.1rem;
+  }
+}
+
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .skills li {
+    width: 31%;
+  }
+  .skills li > strong {
+    font-size: .9rem;
+  }
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .skills {
+    padding-bottom: 5rem;
+  }
+  .skills li > strong {
+    font-size: 1.1rem;
+  }
+}
+
 .main {
   max-width: 16rem;
   width: 100%;
@@ -361,6 +461,7 @@ Bootstrap 4 Breakpoints
 }
 
 .content {
+  padding: .5rem;
   margin-bottom: 2rem;
 }
 
@@ -373,35 +474,33 @@ Bootstrap 4 Breakpoints
   .main {
     max-width: 25rem;
   }
-  .container h4 {
-    font-size: 1.4rem;
-  }
   .content {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .main {
-    max-width: 42rem;
+    max-width: 34rem;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .main {
-    max-width: 50rem;
+    max-width: 43rem;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .main {
-    max-width: 52rem;
+    max-width: 75rem;
   }
   .content {
-    width: 70%;
+    width: 60%;
+    margin-bottom: 5rem;
   }
 }
 
@@ -434,7 +533,7 @@ body::before {
   top: 0;
   left: 0;
   background-image: url("/assets/navbar-accent.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   height: 37.2rem;
@@ -450,6 +549,7 @@ li {
 p {
   font-weight: 500;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 ul {
@@ -460,6 +560,7 @@ ul {
 h1 {
   font-weight: 700;
   font-size: 2.6rem;
+  letter-spacing: .1rem;
   margin: 0;
 }
 
@@ -485,6 +586,11 @@ a.btn {
   padding: .5rem;
 }
 
+.img-fluid {
+  width: 100%;
+  display: block;
+}
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 Breakpoints
@@ -498,9 +604,17 @@ Bootstrap 4 Breakpoints
     font-size: 2.3rem;
   }
   body::before {
-    background-size: cover;
-    height: 19rem;
+    height: 20rem;
     display: block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body::before {
+    height: 22rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -17,6 +17,7 @@
 
 .cta p {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .cta a.btn {
@@ -32,6 +33,9 @@ Bootstrap 4 Breakpoints
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {  
 
+    .cta.main {
+        margin-top: 0;
+    }
     
     
 }
@@ -44,6 +48,9 @@ Bootstrap 4 Breakpoints
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+    .cta a.btn {
+        width: 30%;
+    }
 
 }
 

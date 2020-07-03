@@ -2,11 +2,15 @@
     padding-bottom: 2rem;
 }
 
+.skills h4 {
+    letter-spacing: .1rem;
+}
+
 .skills li {
     width: 90%;
     margin: auto;
     border: 1px solid var(--border);
-    padding: .5rem;
+    padding: 2rem;
 }
 
 .skills li:not(:last-child) {
@@ -24,7 +28,7 @@
 }
 
 .skills li > strong {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 
@@ -33,37 +37,54 @@
 Bootstrap 4 Breakpoints
 */
 
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {  
-
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    
     .skills li {
         width: 48%;
         margin: 0 auto 1rem;
     }
-
+    
     .skills li > strong {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-
+    
     .skills li:not(:last-child) {
         margin-bottom: 1rem;
     }
-
     
-  
 }
 
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {  
-    
-  }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
 
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
+    .skills li > strong {
+        font-size: 1.1rem;
+    }
     
-  }
+}
 
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .skills li {
+        width: 31%;
+    }
+
+    .skills li > strong {
+        font-size: .9rem;
+    }
     
-  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+    .skills {
+        padding-bottom: 5rem;
+    }
+
+    .skills li > strong {
+        font-size: 1.1rem;
+    }
+}
