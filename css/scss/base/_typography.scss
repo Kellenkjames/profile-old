@@ -71,7 +71,8 @@ a.btn {
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
-    min-width: 10rem;
+    max-width: 10rem;
+    margin: 0 auto;
     padding: .5rem;
 }
 
@@ -114,6 +115,7 @@ Bootstrap 4 Breakpoints
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) { 
     
+        
     
   }
   
@@ -125,7 +127,7 @@ Bootstrap 4 Breakpoints
     }
     
     body::before {
-        height: 22rem;
+        height: 33rem;
     }
     
   }

@@ -18,20 +18,15 @@
   margin-top: 3rem;
 }
 
-.cta.main > div {
-  display: block !important;
+.cta.main > div.wrapper {
   padding: 2rem;
   text-align: center;
 }
 
 .cta p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
-}
-
-.cta a.btn {
-  width: 60%;
-  margin: auto;
+  font-weight: 700;
 }
 
 /*
@@ -46,14 +41,46 @@ Bootstrap 4 Breakpoints
 }
 
 /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cta p {
+    font-size: 1.2rem;
+  }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .cta p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  .cta.main > div.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cta p > span {
+    display: block;
+    padding-left: 12rem;
+  }
   .cta a.btn {
-    width: 30%;
+    width: 18%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cta p {
+    font-size: 2rem;
+  }
+}
+
 .footer {
   padding: 6rem 0 3rem;
   margin-top: -4rem;
@@ -293,6 +320,7 @@ Bootstrap 4 Breakpoints
   padding: 0 1rem;
   text-align: center;
   margin-bottom: .5rem;
+  font-weight: 700;
 }
 
 .recent-work li .desc-con a {
@@ -588,7 +616,8 @@ a.btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 10rem;
+  max-width: 10rem;
+  margin: 0 auto;
   padding: .5rem;
 }
 
@@ -623,7 +652,7 @@ Bootstrap 4 Breakpoints
     font-size: 1.6rem;
   }
   body::before {
-    height: 22rem;
+    height: 33rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

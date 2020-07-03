@@ -9,21 +9,17 @@
     margin-top: 3rem;
 }
 
-.cta.main > div {
-    display: block !important;
+.cta.main > div.wrapper {
     padding: 2rem;
     text-align: center;
 }
 
 .cta p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-.cta a.btn {
-    width: 60%;
-    margin: auto;
-}
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -43,13 +39,34 @@ Bootstrap 4 Breakpoints
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  
 
+    .cta p {
+        font-size: 1.2rem;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+    .cta p {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+
+    .cta.main > div.wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta p > span {
+        display: block;
+        padding-left: 12rem;
+    }
+
     .cta a.btn {
-        width: 30%;
+        width: 18%;
     }
 
 }
@@ -57,6 +74,10 @@ Bootstrap 4 Breakpoints
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
 
+
+    .cta p {
+        font-size: 2rem;
+    }
 
 
 }
