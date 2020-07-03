@@ -119,6 +119,10 @@ Bootstrap 4 Breakpoints
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {  
+
+    h4 {
+        font-size: 1.6rem;
+    }
     
     body::before {
         height: 22rem;
