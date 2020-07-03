@@ -1,9 +1,14 @@
 // RECENT WORK
 
 .recent-work {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
     position: relative;
+}
+
+.recent-work header {
+    margin-bottom: 2rem;
+    z-index: 10;
 }
 
 .recent-work h4 {
@@ -19,9 +24,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 40rem;
+    height: 21rem;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .recent-work::after {
@@ -89,17 +94,25 @@ Bootstrap 4 Breakpoints
 */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
+@media (min-width: 576px) { 
+    
+    .recent-work {
+        padding-top: 3rem;
+    }
+
+    .recent-work::before {
+        height: 20rem;
+    }
+
+    .recent-work header {
+        margin-bottom: 3rem;
+    }
 
     .recent-work li {
         width: 48%;
         margin-bottom: 2rem;
     }
     
-    .recent-work::before {
-        height: 27rem;
-    }
-
     .recent-work::after {
         height: 90%;
     }
@@ -116,6 +129,10 @@ Bootstrap 4 Breakpoints
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+    .recent-work::before {
+        height: 20rem;
+    }
     
     .recent-work li {
         width: 48%;
@@ -147,9 +164,18 @@ Bootstrap 4 Breakpoints
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-    
+
     .recent-work {
+        padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+
+    .recent-work::before {
+        height: 30rem;
+    }
+    
+    .recent-work header {
+        margin-bottom: 5rem;
     }
 
     .recent-work::after {
