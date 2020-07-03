@@ -319,7 +319,7 @@ Bootstrap 4 Breakpoints
 
 .recent-work li .desc-con > div {
   position: relative;
-  top: calc(100% - 8.5rem);
+  top: calc(100% - 10.5rem);
 }
 
 .recent-work li .desc-con p {
